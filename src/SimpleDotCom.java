@@ -1,7 +1,8 @@
 public class SimpleDotCom {
     int [] LocationCells;
     int NumOfHits;
-    int n;
+    int n=0;
+    int rand;
     public String Checkyourself(String UserGuess )
     {
         int guess = Integer.parseInt(UserGuess);
@@ -12,7 +13,7 @@ public class SimpleDotCom {
             {
                 result = "hit";
                 NumOfHits++ ;
-                LocationCells[n] = -1;
+                LocationCells[n] = -1*( rand =  (int) (Math.random()*5));
                 n++;
 
                 break;
