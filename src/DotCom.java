@@ -1,11 +1,11 @@
+/*
 import java.util.ArrayList;
 
 public class DotCom {
+  String Name;
+  private ArrayList<String> locationcells;
 
-
-
-        private ArrayList<String> locationcells;
-        public void setLocationcells(ArrayList<String> locs)
+    public void setLocationcells(ArrayList<String> locs)
         {
             locationcells = locs;
 
@@ -14,6 +14,7 @@ public class DotCom {
         {
             String result= "miss";
             int index = locationcells.indexOf(userInput);
+            //returns -1 when userInput does not exist in the ArrayList
             if(index>=0)
             {
                 locationcells.remove(index);
@@ -29,6 +30,11 @@ public class DotCom {
             return result;
 
         }
+
+    public void setName(String name) {
+        Name = name;
     }
+}
+*/
 
 
